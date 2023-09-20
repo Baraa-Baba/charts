@@ -1,12 +1,35 @@
 .App {
   text-align: center;
+} 
+body{
+  width:100%;
+  overflow-x: hidden;
 }
-
+.graphsCont{
+  display:flex; 
+  justify-content: space-evenly;
+}  
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.chart-container{
+  width:45% !important;
+  margin-inline: 1rem;
+  display: inline-block;
+  margin-top:3rem
+}
+.firstChart{
 
+}
+.gagueComp{
+  width:25%
+}
+.gaugeGrid{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+}  
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +58,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+.canvasHidden { 
+  display: none;
+}
+@media (max-width:860px){
+  .gagueComp{
+    width:45%
+  }
+  .gaugeGrid{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.chart-container{
+  width:90% !important;
+  margin-inline: auto;
+  display: block;
+  margin-block:2rem
+}
 }
